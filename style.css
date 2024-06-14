@@ -1,0 +1,41 @@
+body{
+    margin: 10px;
+  display: block;
+}
+.link1{
+    text-align: center;
+
+}
+
+.containers{
+    font-size: 18px;
+  
+}
+.paragrafo{
+    font-style: italic;
+    margin: 0px;
+    font-size: 18px;
+}
+.paragrafo1{
+
+    font-size: 18px;
+}
+.titulo{
+    text-align: center;
+     color: black;
+}
+
+.rodape{
+    text-align: center;
+    font-style: inherit;
+}
+
+.central{
+    margin-top: 100px;
+}
+.link{
+    text-align: center;
+}
+.video{
+    text-align: center;
+}

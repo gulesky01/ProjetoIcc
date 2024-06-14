@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar Git e Github</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="containers">
+<h1 class="titulo">Git e GitHub</h1>
+<div class="link1">
+<a  href="video.html"> Video</a> <br>
+<a href="audio.html"> Audio</a>
+</div>
+
+    <h1 class="principal">O que é o Git e como utilizá-lo</h1>
+    <img src="projeto\comandos-git.png" alt="Git" width="230px">
+<p class="paragrafo">O  <i><b>Git</b></i> é um sistema de controle de versão criado por Linus Torvalds em 2005, usado para rastrear mudanças no código-fonte e facilitar a colaboração entre desenvolvedores.
+    Ou seja, <br>é uma ferramenta que ajuda uma equipe trabalhando no mesmo projeto a gerenciar alterações em um codigo fonte sem alterá-lo, 
+    por meio do registro das versões modificadas,<br> tornando o trabalho em conjunto mais flexivel, seguro e eficiente. </p>
+<p class="paragrafo"> O Git possui uma ampla variedade de comandos que podem ser usados para diferentes propósitos. Existem mais de 150 comandos no Git, cada um com várias opções e subcomandos.
+    <br>Aqui estão alguns exemplos de comandos recorrentes e como utilizá-los:
+</p>
+</div>
+
+
+
+<div class="containers">
+
+
+<h2>Comandos básicos</h2>
+<dl>
+    <dt>INIT</dt>
+    <dd>Incializa um novo repositória no diretório atual</dd>   
+    <dt>CLONE</dt>
+    <dd>Clona um repositória existente</dd>
+    <dt>ADD</dt>
+    <dd>Adiciona as alterações nos arquivos ao índice do Git, preparando-os para serem commitados posteriormente.</dd>
+    <dt>COMMIT</dt>
+    <dd>Salva as alterações realizadas em um repositório como uma nova versão.</dd>
+    <dt>STATUS</dt>
+    <dd>Mostra o estado dos arquivos no índice e no diretório de trabalho.</dd>
+    <dt>DIFF</dt>
+    <dd>Mostra as diferenças entre commits, branches, arquivos, etc.</dd>
+    <dt>PUSH</dt>
+    <dd>Envia commits do repositório local para o remoto, como o Github.</dd>
+    <dt>PULL</dt>
+    <dd>Busca as alterações remotas e as mescla com a versão local do repositório.</dd>
+    <dt>STASH</dt>
+    <dd>Salva temporariamente alterações não comprometidas.</dd>
+    <dt>RM</dt>
+    <dd>Remove um arquivo da sua área de seleção e também do seu diretório</dd>
+</dl>
+
+<table border="1">
+    <tr>
+        <td><b>Comando</b></td>
+        <td><b>Como usar</b></td>
+    </tr>
+    <tr>
+        <td>init</td>
+        <td>git <u>init</u></td>
+    </tr>
+    <tr>
+        <td>clone</td>
+        <td>git <u>clone</u> endereço_do_repositório_a_ser_clonado</td>
+    </tr>
+    <tr>
+        <td>add</td>
+        <td>git <u>add</u></td>
+    </tr>
+    <tr>
+        <td>commit</td>
+        <td>git <u>commit</u> -m "Descrição do Commit"</td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>git <u>status</u></td>
+    </tr>
+    <tr>
+        <td>diff</td>
+        <td>git <u>diff</u> nome_arquivo</td>
+    </tr>
+    <tr>
+        <td>push</td>
+        <td>git <u>push</u> origin nome_da_branch</td>
+    </tr>
+    <tr>
+        <td>pull</td>
+        <td>git <u>pull</u> origin nome_branch</td>
+    </tr>
+    <tr>
+        <td>stash</td>
+        <td>git <u>stash</u></td>
+    </tr>
+    <tr>
+        <td>rm</td>
+        <td>git <u>rm</u> nome_arquivo</td>
+    </tr>
+</table>
+
+<h2>Comandos de Branching e Merging</h2>
+<dl>
+    <dt>BRANCH</dt>
+    <dd>Gerencia branches (criação, listagem, deleção).</dd>
+    <dt>CHECKOUT</dt>
+    <dd>Usado pra mudar de branch, caso a branch ainda não exista você poderá passar o parâmetro -b para criar.</dd>
+    <dt>MERGE</dt>
+    <dd>Combina as alterações de diferentes branches em uma única branch.</dd>
+    <dt>REBASE</dt>
+    <dd>Reaplica commits em cima de outro branch.</dd>
+</dl>
+<table border="1"">
+    <tr>
+        <td><b>Comando</b></td>
+        <td><b>Como usar</b></td>
+    </tr>
+    <tr>
+        <td>branch</td>
+        <td>git <u>branch</u> novo_nome</td>
+    </tr>
+    <tr>
+        <td>checkout</td>
+        <td>git <u>checkout</u> nome_da_branch</td>
+    </tr>
+    <tr>
+        <td>merge</td>
+        <td>git <u>merge</u> feature (Nota: Importante estar na branch main)</td>
+    </tr>
+    <tr>
+        <td>rebase</td>
+        <td>git <u>rebase</u> main</td>
+    </tr>
+</table>
+
+<h2>Comandos de Inspeção e Comparação</h2>
+<dl>
+    <dt>SHOW</dt>
+    <dd>Mostra vários tipos de objetos (commits, tags, etc.).</dd>
+    <dt>BLAME</dt>
+    <dd>Mostra quem alterou cada linha de um arquivo.</dd>
+
+</dl>
+<table border="1"">
+    <tr>
+        <td><b>Comando</b></td>
+        <td><b>Como usar</b></td>
+    </tr>
+    <tr>
+        <td>show</td>
+        <td>git <u>show</u> </td>
+    </tr>
+    <tr>
+        <td>blame</td>
+        <td>git <u>blame</u> nome_arquivo</td>
+    </tr>
+</table>
+
+
+<h2>Comandos de reescrita de diretório</h2>
+<dl>
+    <dt>REVERT</dt>
+    <dd>Reverte tudo o que foi feito em um commit a partir da criação de um novo commit que registra o que foi desfeito</dd>
+    <dt>RESET</dt>
+    <dd>Reseta o índice e/ou o diretório de trabalho.</dd>
+
+
+</dl>
+<table border="1"">
+    <tr>
+        <td><b>Comando</b></td>
+        <td><b>Como usar</b></td>
+    </tr>
+    <tr>
+        <td>revert</td>
+        <td>git <u>revert</u> nome_do_commit </td>
+    </tr>
+    <tr>
+        <td>reset</td>
+        <td>git <u>reset</u> --hard HEAD~1</td>
+    </tr>
+</table>
+
+
+
+<h2>Comandos de sincronização</h2>
+<dl>
+    <dt>REMOTE</dt>
+    <dd>Gerencia repositórios remotos.</dd>
+    <dt>FETCH</dt>
+    <dd> Busca mudanças do repositório remoto sem integrá-las.</dd>
+
+</dl>
+<table border="1"">
+    <tr>
+        <td><b>Comando</b></td>
+        <td><b>Como usar</b></td>
+    </tr>
+    <tr>
+        <td>remote</td>
+        <td>git <u>remote</u> add origin https://github.com/seu-usuario/seu-repositorio.git </td>
+    </tr>
+    <tr>
+        <td>fetch</td>
+        <td>git <u>fetch</u> origin</td>
+    </tr>
+</table>
+
+
+
+
+<h2>Comandos de configuração e utilitários</h2>
+<dl>
+    <dt>CONFIG</dt>
+    <dd> Configura variáveis de usuário e repositório.</dd>
+    <dt>TAG</dt>
+    <dd>Cria, lista, deleta ou verifica tags de commits.</dd>
+
+</dl>
+<table border="1"">
+    <tr>
+        <td><b>Comando</b></td>
+        <td><b>Como usar</b></td>
+    </tr>
+    <tr>
+        <td>config</td>
+        <td>git <u>config</u> --global user.name "nome"
+        </td>
+        <tr>
+            <td>config</td>
+            <td>git <u>config</u> -- global user.email nameemail@example.com</td>
+        </tr>
+    </tr>
+    <tr>
+        <td>tag</td>
+        <td>git <u>tag</u> </td>
+    </tr>
+</table>
+
+
+<h2>Comando de auxílio</h2>
+<dl>
+    <dt>HELP</dt>
+    <dd>Mostra ajuda para comandos Git.</dd>
+</dl>
+<table border="1"">
+    <tr>
+        <td><b>Comando</b></td>
+        <td><b>Como usar</b></td>
+    </tr>
+    <tr>
+        <td>help</td>
+        <td>git <u>help</u> (comando)</td>
+    </tr>
+    <tr>
+            <td>help</td>
+            <td>git (comando) <u>--help</u></td>
+        </tr>
+        <tr>
+            <td>help</td>
+            <td>man git- (comando)</td>
+        </tr>
+      
+    </tr>
+   
+</table>
+
+</div>
+
+<h2>Como configurar e acessar o repositório Github.</h2>
+<img src="projeto\github.jpg" alt="GitHub"  width="230px" height="96.59px">
+<p class="paragrafo">Para configurar e acessar seu repositório no GitHub, basta seguir os passos abaixo:</p>
+<ol class="paragrafo1">
+<li>Depois de criar uma conta no github, na página inicial clique em "criar um novo repositório" e nomeio o novo repositório.</li>
+<li>Após criar o novo repositório, copie o link disponibilizado (https://github.com/seu-usuario/seu-repositorio.git).</li>
+<li>Após ter instalado e configurado o Git, escreva a linha de comando a seguir para criar uma conexão entre o repositório da máquina e o github:<br>
+    <mark><i><b>git remote add origin https://github.com/seu-usuario/seu-repositorio.git</b></i></mark> <br>
+  <mark><i><b>git push -u origin main</b></i></mark>
+</li>
+<li>Após criado essa conexão bastar usar o comando a seguir para salvar as mudanças feitas no repositório do github:<br>
+    <mark><i><b>git commit -m "nome_commit"</b></i></mark> <br>
+    <mark><i><b>git push origin main</b></i></mark>
+</li>
+
+
+</ol>
+<p class="paragrafo">Para outra ações, utilize os comandos disponibilizados nessa página.</p>
+</body>
+
+<footer class="rodape"><small>Criado por <b><i>Gustavo Andrade Moreira de Assis</i></b>,14/06/2024</small></footer>
+
+</html>
